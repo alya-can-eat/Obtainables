@@ -60,7 +60,7 @@ Only tested with Project Poseidon. It may work on CraftBukkit 1060, but that is 
 
 ## Installation
 
-1. Put `Obtainables*.jar` into the `plugins/` folder.
+1. Put `Obtainables*.jar` into the `plugins/` folder. Get from here: https://github.com/alya-can-eat/Obtainables/releases
 2. Start the server. `plugins/Obtainables/config.yml` is created on the first start.
 
 ## Configuration
