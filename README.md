@@ -21,6 +21,7 @@ Some blocks and items exist in Beta 1.7.3 but can never be collected in survival
 | **Chainmail armour** | Zombies and skeletons rarely drop one random chainmail piece. Default 2 %, only when killed by a player (melee or arrow). Zombie pigmen are excluded. |
 | **Ice** | Crafted from 9 snow blocks. |
 | **Cobweb** | Crafted from 5 string in an X shape. |
+| **Alpha TNT** | Crafted from 1 TNT surrounded by 4 redstone dust. Primed by punching, like before Beta 1.7. |
 
 These mechanics can be individually tweaked and disabled in the config file.
 
@@ -33,6 +34,7 @@ Since apples are now obtainable, the vanilla golden apple recipe (8 gold blocks 
 - **Chainmail armour**: its recipe uses fire as ingredient, which cannot be held in an inventory.
 - **Ice**: drops nothing and there is no Silk Touch.
 - **Cobweb**: never generates in Beta 1.7.3 and drops string when broken.
+- **Alpha TNT**: Beta 1.7 made TNT need flint and steel or redstone, but kept the old punch-to-prime behaviour for TNT with data value 1. Breaking it primes it instead of dropping it, and the item loses its data value when placed.
 
 ## Recipes
 
@@ -51,6 +53,16 @@ s   s
   s
 s   s
 ```
+
+Alpha TNT (`r` = redstone dust, `T` = TNT):
+
+```
+  r
+r T r
+  r
+```
+
+Alpha TNT looks like normal TNT in the inventory, but does not stack with it. Once placed, a punch primes it. Flint and steel and redstone work as usual.
 
 ## Requirements
 
@@ -77,6 +89,7 @@ Only tested with Project Poseidon. It may work on CraftBukkit 1060, but that is 
 | `chainmail-player-kill-only` | `true` | Only drop chainmail when a player killed the mob |
 | `ice-recipe` | `true` | Enable the ice recipe |
 | `cobweb-recipe` | `true` | Enable the cobweb recipe |
+| `alpha-tnt-recipe` | `true` | Enable the Alpha TNT recipe. Already crafted Alpha TNT keeps working when turned off |
 
 Recipe changes need a server restart. Bukkit 1060 cannot remove single recipes at runtime.
 
