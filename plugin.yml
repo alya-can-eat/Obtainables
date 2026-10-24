@@ -1,5 +1,5 @@
 name: Obtainables
 main: ch.alya.obtainables.Obtainables
-version: 1.0.0
+version: 1.1.0
 author: Alya
-description: Makes sponge, cobweb, ice, apple and chainmail armour obtainable in Beta 1.7.3 survival, without modifying the world.
+description: Makes sponge, cobweb, ice, apple, chainmail armour and Alpha TNT obtainable in Beta 1.7.3 survival, without modifying the world.
